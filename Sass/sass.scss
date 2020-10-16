@@ -1,0 +1,33 @@
+@import "varibles";
+
+@mixin border($color: brown) {
+    border: 2px solid $color;
+}
+
+body {
+    font-family: $my-font;
+    font-size: $my-font-size;
+    color: $my-color;
+}
+.div-1 {
+    width: $width;
+    background-color: $primary-1;
+}
+.div-2 {
+    background-color: $primary-2;
+}
+.div-3 {
+    @include border(pink);
+    background-color: $primary-3;
+}
+div {
+    p {
+        margin: 0;
+        width: 350px;
+        background-color: $primary-2;
+    }
+}
+.div-21 {
+    @extend .div-1;
+    @include border(black);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling and Capturing</title>
+    <style>
+        div {
+            min-width: 100px;
+            min-height: 100px;
+            padding: 30px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandparent-bubble">
+        <div class="parent-bubble">
+            <div class="child-bubble">
+                Click and Open Console for Event Bubbling
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="grandparent-capture">
+        <div class="parent-capture">
+            <div class="child-capture">
+                Click and Open Console for Event Capturing / Trickling
+            </div>
+        </div>
+    </div>
+    <script src="./base.js"></script>
+</body>
+</html>
